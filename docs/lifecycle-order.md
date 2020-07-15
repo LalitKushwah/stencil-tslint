@@ -61,7 +61,6 @@ If no argument is provided, this rule will enforce the default functionality (wh
   componentDidLoad() { }
   componentWillUpdate() { }
   componentDidUpdate() { }
-  componentDidUnload() { }
   ```
 
 - Order lifecycle methods alphabetically (`alphabetical`)
@@ -72,7 +71,6 @@ If no argument is provided, this rule will enforce the default functionality (wh
   **✅ Pass**
   ```ts
   componentDidLoad() { }
-  componentDidUnload() { }
   componentDidUpdate() { }
   componentWillLoad() { }
   componentWillUpdate() { }

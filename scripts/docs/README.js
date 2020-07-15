@@ -1,5 +1,5 @@
 exports.README = `
-# tslint-stencil
+# stencil-tslint
 Adds stylistic [tslint](https://github.com/palantir/tslint) rules for [Stencil](https://github.com/ionic-team/stencil) projects
 
 ## Getting started
@@ -7,14 +7,14 @@ Add the following line to your \`tslint.json\` file to enable the default rulese
 
 \`\`\`json
 {
-    "extends": ["tslint-stencil/default"],
+    "extends": ["stencil-tslint/default"],
 }
 \`\`\`
 
 Alternatively, you can extend the bare package and enable each [rule](#rules) on a individual basis
 \`\`\`json
 {
-    "extends": ["tslint-stencil"],
+    "extends": ["stencil-tslint"],
     "rules": {
         "host-data-precedes-render": true
     }

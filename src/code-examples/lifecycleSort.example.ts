@@ -12,7 +12,6 @@ export const codeExamples: Lint.ICodeExample[] = [
             componentDidLoad() { }
             componentWillUpdate() { }
             componentDidUpdate() { }
-            componentDidUnload() { }
         `
   },
   {
@@ -22,7 +21,6 @@ export const codeExamples: Lint.ICodeExample[] = [
         `,
     pass: Lint.Utils.dedent`
             componentDidLoad() { }
-            componentDidUnload() { }
             componentDidUpdate() { }
             componentWillLoad() { }
             componentWillUpdate() { }

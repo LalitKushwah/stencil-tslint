@@ -5,7 +5,7 @@ const semver = require("semver");
 const prompt = require("prompts");
 
 async function version() {
-  const current = evalText(await run("npm version"))["tslint-stencil"];
+  const current = evalText(await run("npm version"))["stencil-tslint"];
   const preids = ["alpha", "beta", "rc"];
   const pre = semver.parse(current).prerelease;
   const bumped = {

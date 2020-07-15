@@ -1,5 +1,5 @@
 {
-  "extends": "./tslint-stencil.json",
+  "extends": "./stencil-tslint.json",
   "rules": {
     "ban-prefix": [true, "stencil", "st", "stnl"],
     "component-member-order": [

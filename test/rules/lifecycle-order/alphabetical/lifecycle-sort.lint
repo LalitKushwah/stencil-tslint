@@ -19,7 +19,6 @@ export class Component {
 })
 export class Component {
     componentDidLoad() {}
-    componentDidUnload() {}
     componentDidUpdate() {}
     componentWillLoad() {}
     componentWillUpdate() {}
@@ -39,8 +38,6 @@ export class Component {
     ~~~~~~~~~~~~~~~~~ [failure]
     componentDidUpdate() { }
     ~~~~~~~~~~~~~~~~~~ [failure]
-    componentDidUnload() { }
-    ~~~~~~~~~~~~~~~~~~ [failure]
     componentDidLoad() { }
     ~~~~~~~~~~~~~~~~ [failure]
 
@@ -52,10 +49,6 @@ export class Component {
     tag: 'my-component'
 })
 export class Component {
-  componentDidUnload() { }
-  ~~~~~~~~~~~~~~~~~~ [failure]
-  componentDidLoad() { }
-  ~~~~~~~~~~~~~~~~ [failure]
 }
 
 @Component({
@@ -67,7 +60,6 @@ export class Component {
     @Prop() propC: string;
 
     componentDidLoad() { }
-    componentDidUnload() { }
     componentDidUpdate() { }
     componentWillUpdate() { }
     ~~~~~~~~~~~~~~~~~~~ [failure]
@@ -82,7 +74,6 @@ export class Component {
     tag: 'my-component'
 })
 export class Component {
-  componentDidUnload() { }
   componentWillLoad() { }
   componentWillUpdate() { }
 }

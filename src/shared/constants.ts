@@ -1,9 +1,13 @@
 export const LIFECYCLE_METHODS = [
+  "connectedCallback",
+  "disconnectedCallback",
   "componentWillLoad",
   "componentDidLoad",
+  "componentShouldUpdate",
+  "componentWillRender",
+  "componentDidRender",
   "componentWillUpdate",
-  "componentDidUpdate",
-  "componentDidUnload"
+  "componentDidUpdate"
 ];
 
 export const STENCIL_METHODS = ["render"];

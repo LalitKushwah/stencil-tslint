@@ -1,12 +1,13 @@
 {
-  "name": "tslint-stencil",
-  "version": "1.0.1",
+  "name": "stencil-tslint",
+  "version": "1.0.0",
   "description": "Adds stylistic rules to tslint for Stencil projects",
   "keywords": [
     "tslint",
     "rules",
     "stencil",
-    "stenciljs"
+    "stenciljs",
+    "code organization"
   ],
   "main": "rules/index.js",
   "directories": {
@@ -21,18 +22,13 @@
     "predocs": "rm -rf docs",
     "docs": "node scripts/docs"
   },
-  "author": "Nate Moore",
+  "author": "Lalit Kushwah",
   "contributors": [
     {
-      "name": "Nate Moore",
-      "email": "nate@natemoo.re",
-      "url": "https://natemoo.re"
+      "name": "Lalit Kushwah",
+      "email": "lalitkushwah52525@gmail.com"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/natemoo-re/tslint-stencil.git"
-  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^10.9.2",

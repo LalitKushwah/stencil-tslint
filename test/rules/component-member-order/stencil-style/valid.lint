@@ -79,7 +79,6 @@ export class Something {
   @Event() ionOpen: EventEmitter;
 
   componentDidLoad() {}
-  componentDidUnload() {}
   componentDidUpdate() {}
   componentWillLoad() {}
   componentWillUpdate() {}
@@ -114,15 +113,12 @@ export class Something {
    * Internal business logic. These methods cannot be
    * called from the host element.
    */
-  prepareAnimation(): Promise<void> { }
-
-  updateState() { }
-
-  /**
+    /**
    * 11. hostData() function
    * Used to dynamically set host element attributes.
    * Should be placed directly above render()
    */
+   
   hostData() {
     return {
       attribute: 'navigation',
@@ -133,6 +129,10 @@ export class Something {
       }
     };
   }
+
+  prepareAnimation(): Promise<void> { }
+
+  updateState() { }
 
   /**
    * 12. render() function

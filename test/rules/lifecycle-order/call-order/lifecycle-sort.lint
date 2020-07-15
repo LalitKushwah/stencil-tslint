@@ -21,8 +21,6 @@ export class Component {
   componentWillLoad() { }
   componentDidLoad() { }
   componentWillUpdate() { }
-  componentDidUpdate() { }
-  componentDidUnload() { }
 }
 
 @Component({
@@ -33,16 +31,9 @@ export class Component {
     @Prop() propB: string;
     @Prop() propC: string;
 
-    componentDidUnload() { }
-    ~~~~~~~~~~~~~~~~~~ [failure]
-    componentDidUpdate() { }
-    ~~~~~~~~~~~~~~~~~~ [failure]
-    componentWillUpdate() { }
-    ~~~~~~~~~~~~~~~~~~~ [failure]
-    componentDidLoad() { }
-    ~~~~~~~~~~~~~~~~ [failure]
     componentWillLoad() { }
-    ~~~~~~~~~~~~~~~~~ [failure]
+    componentDidLoad() { }
+    componentWillUpdate() { }
 
     hostData() { }
     render() { }
@@ -52,10 +43,6 @@ export class Component {
     tag: 'my-component'
 })
 export class Component {
-  componentDidUnload() { }
-  ~~~~~~~~~~~~~~~~~~ [failure]
-  componentDidLoad() { }
-  ~~~~~~~~~~~~~~~~ [failure]
 }
 
 @Component({
@@ -69,10 +56,6 @@ export class Component {
     componentWillLoad() { }
     componentDidLoad() { }
     componentWillUpdate() { }
-    componentDidUnload() { }
-    ~~~~~~~~~~~~~~~~~~ [failure]
-    componentDidUpdate() { }
-    ~~~~~~~~~~~~~~~~~~ [failure]
 
     render() { }
 }
@@ -83,7 +66,6 @@ export class Component {
 export class Component {
   componentWillLoad() { }
   componentWillUpdate() { }
-  componentDidUnload() { }
 }
 
 [failure]: Component lifecycle methods should be ordered according to their call order
