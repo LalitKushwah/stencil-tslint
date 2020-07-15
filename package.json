@@ -1,7 +1,7 @@
 {
   "name": "stencil-tslint",
   "version": "1.0.0",
-  "description": "Adds stylistic rules to tslint for Stencil projects",
+  "description": "Adds stylistic rules to tslint for Stencil projects synced with stencil-1.15",
   "keywords": [
     "tslint",
     "rules",
@@ -29,6 +29,10 @@
       "email": "lalitkushwah52525@gmail.com"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LalitKushwah/stencil-tslint"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^10.9.2",

@@ -1,3 +1,5 @@
+> This package is repackaged from [stencil-tslint](https://github.com/natemoo-re/tslint-stencil). Only intention to create this package is to be in sync with code organization pattern recommended by [stenciljs](https://stenciljs.com/docs/style-guide).
+
 # stencil-tslint
 
 Adds stylistic [tslint](https://github.com/palantir/tslint) rules for [Stencil](https://github.com/ionic-team/stencil) projects
