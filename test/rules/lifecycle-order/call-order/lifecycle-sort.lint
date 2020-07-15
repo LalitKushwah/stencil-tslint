@@ -1,0 +1,71 @@
+import { Component, Prop } from '@stencil/core';
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+    someFunction() { }
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+    componentWillLoad() { }
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+  componentWillLoad() { }
+  componentDidLoad() { }
+  componentWillUpdate() { }
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+    @Prop() propA: string;
+    @Prop() propB: string;
+    @Prop() propC: string;
+
+    componentWillLoad() { }
+    componentDidLoad() { }
+    componentWillUpdate() { }
+
+    hostData() { }
+    render() { }
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+    @Prop() propA: string;
+    @Prop() propB: string;
+    @Prop() propC: string;
+
+    componentWillLoad() { }
+    componentDidLoad() { }
+    componentWillUpdate() { }
+
+    render() { }
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+  componentWillLoad() { }
+  componentWillUpdate() { }
+}
+
+[failure]: Component lifecycle methods should be ordered according to their call order

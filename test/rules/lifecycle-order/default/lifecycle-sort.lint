@@ -1,0 +1,30 @@
+import { Component, Prop } from '@stencil/core';
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+    someFunction() { }
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+    componentWillLoad() { }
+}
+
+@Component({
+    tag: 'my-component'
+})
+export class Component {
+  connectedCallback () {},
+  disconnectedCallback () {},
+  componentWillLoad () {},
+  componentDidLoad () {},
+  componentShouldUpdate () {},
+  componentWillRender () {},
+  componentDidRender() {},
+  componentWillUpdate() {},
+  componentDidUpdate() {}
+}
