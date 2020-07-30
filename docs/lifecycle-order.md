@@ -57,10 +57,15 @@ If no argument is provided, this rule will enforce the default functionality (wh
   **✅ Pass**
 
   ```ts
-  componentWillLoad() { }
-  componentDidLoad() { }
-  componentWillUpdate() { }
-  componentDidUpdate() { }
+    connectedCallback () { }
+    disconnectedCallback () { },
+    componentWillLoad () { },
+    componentDidLoad () { },
+    componentShouldUpdate () { },
+    componentWillRender () {},
+    componentDidRender () { },
+    componentWillUpdate () { },
+    componentDidUpdate () { }
   ```
 
 - Order lifecycle methods alphabetically (`alphabetical`)
